@@ -1,0 +1,6 @@
+pygame
+gpiozero
+google-genai
+vosk
+# system packages (apt): alsa-utils (arecord/aplay), pulseaudio-utils (paplay/pactl), bluez (bluetoothctl), python3-lgpio
+# (python-dotenv is no longer required; groq/elevenlabs only for the legacy reference file: see requirements-legacy.txt)

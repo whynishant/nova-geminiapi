@@ -1,0 +1,82 @@
+"""AURA face configuration."""
+FALLBACK_WIDTH = 800
+FALLBACK_HEIGHT = 480
+TARGET_FPS = 45
+FULLSCREEN = True
+
+COLOR_BG = (8, 10, 18)
+COLOR_BG_GLOW = (14, 18, 30)
+COLOR_EYE_WHITE = (235, 245, 255)
+COLOR_EYE_IRIS = (70, 190, 255)
+COLOR_EYE_PUPIL = (10, 20, 30)
+COLOR_EYE_HIGHLIGHT = (255, 255, 255)
+COLOR_LID = COLOR_BG
+COLOR_MOUTH = (255, 140, 170)
+COLOR_BLUSH = (255, 110, 140)
+COLOR_GLOW = (60, 160, 255)
+COLOR_HEART = (255, 90, 140)
+COLOR_SPARKLE = (255, 255, 255)
+
+EYE_WIDTH_FRAC = 0.16
+EYE_HEIGHT_FRAC = 0.16
+EYE_GAP_FRAC = 0.10
+EYE_Y_FRAC = 0.42
+MOUTH_Y_FRAC = 0.72
+MOUTH_WIDTH_FRAC = 0.20
+MOUTH_HEIGHT_FRAC = 0.09
+IRIS_RADIUS_FRAC = 0.62
+PUPIL_RADIUS_FRAC = 0.34
+HIGHLIGHT_RADIUS_FRAC = 0.12
+MAX_PUPIL_OFFSET_FRAC = 0.30
+
+BLINK_MIN_INTERVAL = 2.2
+BLINK_MAX_INTERVAL = 6.5
+BLINK_DURATION_NORMAL = 0.14
+BLINK_DURATION_SLOW = 0.32
+DOUBLE_BLINK_CHANCE = 0.12
+SLOW_BLINK_CHANCE = 0.15
+ASYMMETRIC_WINK_CHANCE = 0.05
+
+IDLE_LOOK_MIN_INTERVAL = 3.0
+IDLE_LOOK_MAX_INTERVAL = 8.0
+IDLE_MICROMOVE_AMPLITUDE = 0.03
+IDLE_SMILE_CHANCE = 0.20
+SLEEPY_AFTER_SECONDS = 90.0
+
+EASE_SPEED_EYES = 8.0
+EASE_SPEED_LIDS = 10.0
+EASE_SPEED_MOUTH = 14.0
+EASE_SPEED_GAZE = 6.0
+
+TALK_SHAPE_CHANGE_MIN = 0.06
+TALK_SHAPE_CHANGE_MAX = 0.16
+
+# ==============================
+# VOICE ACTIVITY DETECTION (VAD)
+# ==============================
+
+# Room noise calibration before listening
+VAD_CALIBRATION_SECONDS = 0.6
+
+# Audio level above room noise = speech
+VAD_SPEECH_MULTIPLIER = 2.8
+
+# Minimum RMS level to consider as speech
+VAD_MIN_RMS = 350
+
+# How long silence must continue before sentence is finished
+VAD_END_SILENCE_SECONDS = 1.2
+
+# Ignore extremely short sounds/noise
+VAD_MIN_SPEECH_SECONDS = 0.25
+
+# Maximum time to wait for someone to start speaking
+VAD_START_TIMEOUT_SECONDS = 15.0
+
+# Maximum length of one spoken sentence
+# This is a safety limit, NOT a normal recording limit.
+VAD_MAX_RECORD_SECONDS = 60.0
+
+# Small audio buffer kept before speech starts
+# Helps avoid cutting the first syllable.
+VAD_PRE_ROLL_SECONDS = 0.25

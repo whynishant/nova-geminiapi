@@ -1,0 +1,5 @@
+pygame
+groq
+elevenlabs
+python-dotenv
+gpiozero
